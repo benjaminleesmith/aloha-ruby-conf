@@ -1,6 +1,8 @@
 require "terminal-table"
 require "schedule/printer"
 require "schedule/time_slot"
+require "hawaiian_language/translator"
+require "hawaiian_language/web_fetcher"
 require "date"
 
 class AlohaRubyConf
@@ -38,5 +40,11 @@ class AlohaRubyConf
     printer = Schedule::Printer.new(SCHEDULE_DATA)
     printer.print_schedule
     true
+  end
+
+  def self.translate(term)
+    translator = HawaiianLanguage::Translator.new(HawaiianLanguage::WebFetcher.new)
+
+    translator.translate(term)
   end
 end

@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.version       = "2012.2"
 
   gem.add_runtime_dependency "terminal-table"
+  gem.add_runtime_dependency "nokogiri"
 end
