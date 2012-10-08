@@ -1,6 +1,4 @@
-# Aloha::Ruby::Conf
-
-TODO: Write a gem description
+# Unofficial 2012 Aloha Ruby Conf Gem!
 
 ## Installation
 
@@ -18,12 +16,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    > require 'aloha-ruby-conf'
 
-## Contributing
+    > AlohaRubyConf.translate("hello")
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    > Monday, October 8, 2012
+      +------------------+--------------------------------------+------------------------------------------------------+
+      | Time             | Track 1                              | Track 2                                              |
+      +------------------+--------------------------------------+------------------------------------------------------+
+      |  8:00 - 9:00 AM  |                                  Registration & Breakfast                                   |
+      +------------------+--------------------------------------+------------------------------------------------------+
+      |  9:15 - 9:30 AM  |                                   Welcome & Introduction                                    |
+      +------------------+--------------------------------------+------------------------------------------------------+
+      ...
