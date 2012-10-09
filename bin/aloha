@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'aloha-ruby-conf'
+
+options = {}
+
+opt_parser = OptionParser.new do |opt|
+  opt.banner    = "Usage: aloha COMMAND"
+  opt.separator ""
+  opt.separator "Commands"
+  opt.separator "     translate WORD: translate word to Hawaiian"
+  opt.separator "     schedule: print AlohaRubyConf schedule"
+end
+
+case ARGV[0]
+when 'translate'
+  if ARGV[1]
+    p AlohaRubyConf.translate(ARGV[1])
+  else
+    p "Must provide a phrase to translate."
+  end
+when 'schedule'
+  AlohaRubyConf.print_schedule
+else
+  puts opt_parser
+end
